@@ -5,6 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(./images/camp-camping-daylight-2255518.jpg) no-repeat bottom center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: 500;
+  color: #fff;
 }
 
 code {
@@ -12,7 +20,15 @@ code {
     monospace;
 }
 
-#root {
+.App {
   display: grid;
-  
+  grid-template-areas: "header-logo header-banner header-menu"
+                       "left-ads content right-ads"
+                       "footer footer footer";
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-gap: 7.5px;
+}
+.footer {
+  background-color: #000;
 }
